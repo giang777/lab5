@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tải lên File</title>
+</head>
+
+<body>
+    <h1>Chọn 1 file </h1>
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <input type="file" name="fileUri" id="file">
+        <input type="submit" value="Upload"/>
+    </form>
+    <h1>Chọn nhiều file </h1>
+    <form method="POST" action="/multiple" enctype="multipart/form-data">
+        <input type="file" name="fileMultiple" id="files" multiple>
+        <input type="submit" value="Upload"/>
+    </form>
+    
+</body>
+
+</html>
