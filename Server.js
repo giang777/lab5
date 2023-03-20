@@ -77,7 +77,7 @@ app.post('/multiple', (req, res) => {
             }
         } else {
             let obj = { ...data };
-            console.log(obj);
+            //console.log(obj);
             if (obj.mimetype == 'image/png' || obj.mimetype == 'image/gif' || obj.mimetype == 'image/jpeg') {
                 let setName = obj.name.split(".");
                 setName.pop();
